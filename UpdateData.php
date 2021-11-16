@@ -3,7 +3,7 @@
     $id_siswa = $_GET["id_siswa"];
     //$value = isset($_POST['value']) ? $_POST['value'] : '';
     // $id_siswa = isset($_POST["id_siswa"]) ? $_POST['id_siswa'] : '';
-    $sql = "SELECT * FROM bukuu WHERE id_siswa=".$id_siswa;
+    $sql = "SELECT * FROM buku WHERE id_siswa=".$id_siswa;
     $result = $conn->query($sql) or die($conn->error);
 
     $result = $result->fetch_assoc();

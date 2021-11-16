@@ -12,7 +12,7 @@
         include 'koneksi.php';
         echo "<a href= 'masukandata.php'><button>Add Data</button></a><br>";
 
-    $sql = "SELECT * FROM bukuu";
+    $sql = "SELECT * FROM buku";
     $result = $conn->query($sql);
     $a = 1;
 

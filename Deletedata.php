@@ -12,10 +12,10 @@
     include './koneksi.php';
     $id_siswa = $_GET["id_siswa"];
     //$value = isset($_POST['value']) ? $_POST['value'] : '';
-    //$id_siswa = isset($_GET['id_siswa']) ? $_POST['id_siswa'] : ''; (YANG BENER YANG MANA HUA)
+    //$id_siswa = isset($_GET['id_siswa']) ? $_POST['id_siswa'] : ''; 
     // $id_siswa = isset($_POST['id_siswa']) ? $_POST['id_siswa'] : '';
 
-    $sql = "DELETE FROM bukuu WHERE id_siswa='$id_siswa'";
+    $sql = "DELETE FROM buku WHERE id_siswa='$id_siswa'";
 
     if($conn->query($sql) === TRUE){
         echo "Data successfully erased! <br>";

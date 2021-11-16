@@ -11,7 +11,7 @@
     $Column= isset ($_POST['Column']) ? $_POST['Column'] : '';
     $Find= isset ($_POST['Find']) ? $_POST['Find']: ''; 
     $link = mysqli_connect ("localhost","root","","db_siswa");
-    $Hasil=mysqli_query($link,"SELECT * FROM bukuu WHERE $Column like '%$Find%'");
+    $Hasil=mysqli_query($link,"SELECT * FROM buku WHERE $Column like '%$Find%'");
     $jumlah=mysqli_num_rows ($Hasil);
     echo "<br>";
     echo "Found: $jumlah";

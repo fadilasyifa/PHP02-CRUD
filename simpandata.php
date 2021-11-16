@@ -17,7 +17,7 @@
     $id_jurusan = isset ($_POST['id_jurusan']) ? $_POST['id_jurusan']: '';
 
 
-    $sql = "INSERT INTO bukuu (nis, nama_siswa , jenis_kelamin , alamat , id_jurusan) VALUES ( '$nis', '$nama_siswa', '$jenis_kelamin' , '$alamat' , '$id_jurusan')";
+    $sql = "INSERT INTO buku (nis, nama_siswa , jenis_kelamin , alamat , id_jurusan) VALUES ( '$nis', '$nama_siswa', '$jenis_kelamin' , '$alamat' , '$id_jurusan')";
     if($conn->query($sql) === TRUE){
         echo "simpan berhasil <br>";
         echo "<a href= 'masukandata.php'>Kembali</a><br>";

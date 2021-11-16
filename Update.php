@@ -9,7 +9,7 @@
     $id_jurusan = isset ($_POST["id_jurusan"]) ? $_POST[id_jurusan]:'';
 
 
-    $sql = "UPDATE bukuu SET nis='$nis', nama_siswa='$nama_siswa', jenis_kelamin='$jenis_kelamin' , alamat='$alamat' , id_jurusan='$id_jurusan' WHERE nis='$nis'";
+    $sql = "UPDATE buku SET nis='$nis', nama_siswa='$nama_siswa', jenis_kelamin='$jenis_kelamin' , alamat='$alamat' , id_jurusan='$id_jurusan' WHERE nis='$nis'";
     if($conn->query($sql) === TRUE){
         echo "Successfully updated data! <br>";
         echo "<a href='tampildata.php'><button>Back</button></a><br>";
